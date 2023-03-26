@@ -1,0 +1,49 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="bg-secondary text-warning text-center">
+    <div class="container p-5 bg-secondary">
+        <div class="row">
+            <div class="d-md-flex bg-secondary align-items-center justify-content-evenly">
+                <h1 class="col text-success"><br>いらっしゃいませ ハッピー 美味しい ソーダ 時間</h1>
+            </div>
+            <div class="d-md-flex bg-secondary align-items-center justify-content-evenly">
+                <h1 class="col text-success">Welcome to Happy Tasty Soda Time!</h1>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div>
+                <h4>Are your taste buds tired of the lame-old-same-old soda options? Well we are here to help!
+                    Happy Tasty Soda Time is a place where you learn about new delicious international soda options,
+                    and begin your hunt for your new favorite beverage.<br><br>
+                </h4>
+                <h1 class="text-success">
+                    It's not all about you.....<br><br>
+                </h1>
+                <h4>    
+                    You can also help other users find their newest tasty obsession by adding new drinks that you've
+                    discovered to the ever-growing database of Happy Tasty Soda.
+                </h4>
+            </div>
+        </div>
+        <div class="row p-2">
+            <div class="align-items-center justify-content-evenly">
+                <button type="button" class="btn btn-danger mx-2"><a href="{{ url_for('auth.signin') }}" class="text-warning" style="text-decoration: none;">Sign In</a></button>
+                <button type="button" class="btn btn-danger mx-2"><a href="{{ url_for('auth.signup') }}" class="text-warning" style="text-decoration: none;">Sign Up</a></button> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light text-center">
+    <div class="container p-5">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="" class="img-fluid p-5" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
